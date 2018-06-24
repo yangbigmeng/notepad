@@ -1,0 +1,6 @@
+rootProject.name = 'notepad'
+include 'core'
+include 'common'
+include 'web'
+include 'springnote'
+
