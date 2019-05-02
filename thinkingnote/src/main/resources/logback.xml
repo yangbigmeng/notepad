@@ -3,7 +3,7 @@
 
     <!--文件日志-->
     <appender name="ALL" class="ch.qos.logback.core.FileAppender">
-        <file>spring_note.log</file>
+        <file>thinking_note.log</file>
         <encoder>
             <pattern>[%d{HH:mm:ss.SSS}] [%thread] [%level] %logger{36} - %msg%n</pattern>
         </encoder>
