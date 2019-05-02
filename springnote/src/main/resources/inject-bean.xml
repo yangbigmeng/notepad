@@ -11,7 +11,7 @@
     <context:property-placeholder location="classpath:springnote.properties"/>
 
     <!--汉字转拼音-->
-    <bean id="encodeUtils" class="com.notepad.springnote.inject.EncodeUtils">
+    <bean id="encodeUtils" class="com.notepad.springnote.inject.EncodeUtils" scope="">
         <property name="separate" value="${inject.separate}"/>
         <property name="retain" value="${inject.retain}"/>
     </bean>

@@ -10,7 +10,7 @@ import java.util.*;
  * <p>
  * Create:       2018/6/17 17:07
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 public class CollectionUtilsTest {
 

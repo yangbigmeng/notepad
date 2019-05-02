@@ -7,7 +7,7 @@ import java.util.Map;
  * <p>
  * Create:      2018/6/30 22:55
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 public interface HttpServerClient {
 

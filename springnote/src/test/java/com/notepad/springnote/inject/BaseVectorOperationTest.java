@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * <p>
  * Create:      2018/6/30 10:53
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = InjectConfig.class)

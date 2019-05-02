@@ -24,7 +24,7 @@ import java.util.Date;
  * </p>
  * Create:       2018/6/16 15:29
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 public class TimeUtils {
 

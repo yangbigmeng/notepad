@@ -5,7 +5,7 @@ package com.notepad.thinkingnote.consts;
  * <p>
  * Create:      2018/7/15 17:55
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 public class ThinkingNoteConsts {
 }

@@ -8,7 +8,7 @@ import org.junit.Test;
  * <p>
  * Create:       2018/6/17 15:32
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 public class TimeUtilsTest {
 

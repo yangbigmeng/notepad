@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
  * </p>
  * Create:      2018/7/2 23:30
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 public class InnerReader implements Runnable {
 

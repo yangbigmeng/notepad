@@ -14,7 +14,7 @@ import java.util.concurrent.*;
  * </p>
  * Create:      2018/7/2 23:27
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 public class BigFileApplication {
 

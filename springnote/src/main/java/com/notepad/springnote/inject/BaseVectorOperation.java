@@ -5,7 +5,7 @@ package com.notepad.springnote.inject;
  * <p>
  * Create:      2018/6/30 10:41
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 public interface BaseVectorOperation {
 

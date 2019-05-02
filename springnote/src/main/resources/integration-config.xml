@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:int="http://www.springframework.org/schema/integration"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/integration
+       http://www.springframework.org/schema/integration/spring-integration.xsd">
+
+    <!--a demo of integration work well-->
+    <!--gateway-->
+    <int:channel id="queryChannel"/>
+    <int:channel id="resultChannel"/>
+    <int:gateway id="queryCountGateway"
+                 default-request-channel="queryChannel"
+                 default-reply-channel="resultChannel"
+                 service-interface="com.notepad.springnote.integration.QueryCount"
+                 default-reply-timeout="3"/>
+
+    <!--scatter gather-->
+    <int:publish-subscribe-channel id="queryScatter" apply-sequence="true"/>
+    <int:channel id="queryGather"/>
+    <!--the scatterGatherHandler is a request-reply endpoint that combines a publishSubscribeChannel (or recipientListRouter)-->
+    <int:scatter-gather id="queryScatterGather"
+                        input-channel="queryChannel"
+                        output-channel="resultChannel"
+                        scatter-channel="queryScatter"
+                        gather-channel="queryGather">
+    </int:scatter-gather>
+
+    <!--service activator-->
+    <int:service-activator id="count"
+                           input-channel="queryScatter"
+                           output-channel="queryGather"
+                           ref="chunkUtils"
+                           method="count"/>
+
+    <!--service activator-->
+    <int:service-activator id="upper"
+                           input-channel="queryScatter"
+                           output-channel="queryGather"
+                           ref="chunkUtils"
+                           method="upper"/>
+
+</beans>

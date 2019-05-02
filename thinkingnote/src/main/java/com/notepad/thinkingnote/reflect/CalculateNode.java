@@ -5,7 +5,7 @@ package com.notepad.thinkingnote.reflect;
  * <p>
  * Create:      2018/8/12 20:39
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 public class CalculateNode {
 

@@ -10,7 +10,7 @@ import net.sourceforge.pinyin4j.format.HanyuPinyinToneType;
  * <p>
  * Create:      2018/6/24 11:44
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 public class EncodeUtils {
 

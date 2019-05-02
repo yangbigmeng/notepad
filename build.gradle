@@ -1,6 +1,6 @@
 buildscript {
-    //build script中的声明是gradle脚本自身需要使用的资源
 
+    //build script中的声明是gradle脚本自身需要使用的资源
     repositories {
         mavenCentral()
     }
@@ -42,17 +42,27 @@ project(':web') {
     war {
         baseName = 'web'
     }
+    bootRepackage {
+        mainClass = "com.notepad.web.HttpServerApplication"
+    }
 }
 
 project(':core') {
-    war {
+    jar {
         baseName = 'core'
+    }
+
+    bootRepackage {
+        enabled = false
     }
 }
 
 project(':common') {
-    war {
+    jar {
         baseName = 'common'
+    }
+    bootRepackage {
+        enabled = false
     }
 }
 

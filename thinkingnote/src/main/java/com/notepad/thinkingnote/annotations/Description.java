@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
  * </p>
  * Create:      2018/7/15 17:58
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 
 @Target(ElementType.FIELD)

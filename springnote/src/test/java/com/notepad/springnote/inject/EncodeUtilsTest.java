@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
  * <p>
  * Create:      2018/6/24 12:13
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 
 @RunWith(SpringJUnit4ClassRunner.class)

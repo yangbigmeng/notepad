@@ -15,7 +15,7 @@ import java.net.URI;
  * <p>
  * Create:       2018/6/21 23:59
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 public class HdfsProcess {
 

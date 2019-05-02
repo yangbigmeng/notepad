@@ -17,7 +17,7 @@ import java.util.concurrent.BlockingQueue;
  * </p>
  * Create:      2018/7/2 23:46
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 public class InnerWriter implements Runnable {
 

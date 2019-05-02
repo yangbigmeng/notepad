@@ -7,7 +7,7 @@ import java.io.*;
  * <p>
  * Create:      2018/6/25 0:28
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 public class FileUtils {
 

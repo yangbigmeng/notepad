@@ -5,7 +5,7 @@ package com.notepad.thinkingnote.exception;
  * <p>
  * Create:      2018/6/30 23:04
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 public enum ErrorMsgEnum {
 

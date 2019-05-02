@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
  * <p>
  * Create:      2018/6/30 10:49
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 @Component
 public class VectorSum implements BaseVectorOperation {

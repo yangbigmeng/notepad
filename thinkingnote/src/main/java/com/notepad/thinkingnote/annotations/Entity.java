@@ -7,7 +7,7 @@ package com.notepad.thinkingnote.annotations;
  * </p>
  * Create:      2018/7/15 18:02
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 public class Entity {
 

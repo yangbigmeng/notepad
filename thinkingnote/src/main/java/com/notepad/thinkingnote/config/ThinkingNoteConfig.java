@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  * <p>
  * Create:      2018/7/1 1:38
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 @Configuration
 @ComponentScan(basePackages = "com.notepad.thinkingnote")

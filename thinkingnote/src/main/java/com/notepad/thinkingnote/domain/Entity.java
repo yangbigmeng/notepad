@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * <p>
  * Create:      2018/9/6 22:37
  *
- * @author Yang Meng(eyangmeng@163.com)
+ * @author Marvin Yang
  */
 //@JsonIgnoreProperties(ignoreUnknown = true)
 public class Entity {
