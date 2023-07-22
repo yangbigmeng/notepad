@@ -1,4 +1,10 @@
+group 'notepad'
+version '1.0-SNAPSHOT'
+
 buildscript {
+    ext {
+        springBootVersion='2.1.4.RELEASE'
+    }
 
     //build script中的声明是gradle脚本自身需要使用的资源
     repositories {
@@ -6,22 +12,15 @@ buildscript {
     }
 
     dependencies {
-        classpath('org.springframework.boot:spring-boot-gradle-plugin:1.4.0.RELEASE')
-        classpath("org.springframework:spring-core:4.3.2.RELEASE")
-        classpath('org.springframework.boot:spring-boot-loader-tools:1.4.0.RELEASE')
-        classpath("io.spring.gradle:dependency-management-plugin:0.6.0.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}" as Object)
     }
 }
 
-allprojects {
-    apply plugin: 'java'
-    group 'notepad'
-    version '1.0-SNAPSHOT'
-}
-
 subprojects {
-    apply plugin: 'war'
-    apply plugin: 'spring-boot'
+    apply plugin: 'java'
+    apply plugin: 'org.springframework.boot'
+    // 传递依赖
+    apply plugin: 'io.spring.dependency-management'
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
 
@@ -32,39 +31,10 @@ subprojects {
     dependencies {
         // If you are building a web site for your business,
         // you probably need to add some management services
-        compile("org.springframework.boot:spring-boot-starter-actuator:1.4.0.RELEASE")
-        testCompile("org.springframework.boot:spring-boot-starter-test:1.4.0.RELEASE")
+        compile("org.springframework.boot:spring-boot-starter-actuator")
+        testCompile("org.springframework.boot:spring-boot-starter-test")
         testCompile group: 'junit', name: 'junit', version: '4.12'
     }
 }
-
-project(':web') {
-    war {
-        baseName = 'web'
-    }
-    bootRepackage {
-        mainClass = "com.notepad.web.HttpServerApplication"
-    }
-}
-
-project(':core') {
-    jar {
-        baseName = 'core'
-    }
-
-    bootRepackage {
-        enabled = false
-    }
-}
-
-project(':common') {
-    jar {
-        baseName = 'common'
-    }
-    bootRepackage {
-        enabled = false
-    }
-}
-
 
 

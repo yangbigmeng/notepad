@@ -2,10 +2,12 @@ package com.notepad.service;
 
 import com.notepad.model.Answer;
 import com.notepad.model.Question;
+import org.springframework.stereotype.Service;
 
 /**
  * Created by YM on 2017/6/11.
  */
+@Service
 public class ServiceEngineImpl implements ServiceEngine{
 
     @Override
