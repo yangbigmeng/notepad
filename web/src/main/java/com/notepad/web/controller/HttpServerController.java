@@ -12,7 +12,7 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.notepad.service.ServiceEngine;
-import com.notepad.util.JsonSerializer;
+import com.notepad.util.JsonUtils;
 
 import javax.validation.Valid;
 
@@ -33,11 +33,11 @@ public class HttpServerController {
             Question question = query.convertToQuery();
             Answer answer = serviceEngine.process(question);
             ServerAnswer<Answer> result = AnswerBuilder.buildSuccess(answer);
-            return JsonSerializer.serialize(result);
+            return JsonUtils.serialize(result);
         } catch (Exception e) {
             e.printStackTrace();
             ServerAnswer<Answer> result = AnswerBuilder.buildFailed(null, e.getMessage());
-            return JsonSerializer.serialize(result);
+            return JsonUtils.serialize(result);
         }
     }
 }

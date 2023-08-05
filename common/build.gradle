@@ -1,3 +1,6 @@
 dependencies {
+    // guava
+    compile("com.google.guava:guava:31.0-jre")
+
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
